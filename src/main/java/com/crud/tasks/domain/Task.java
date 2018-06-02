@@ -4,14 +4,12 @@ package com.crud.tasks.domain;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @Getter
 @AllArgsConstructor
+@Entity
 public class Task {
 
     @Id
