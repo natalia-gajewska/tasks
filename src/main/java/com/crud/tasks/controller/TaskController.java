@@ -5,11 +5,10 @@ import com.crud.tasks.mapper.TaskMapper;
 import com.crud.tasks.service.DbService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
+
 
 
 @RestController
@@ -23,9 +22,9 @@ public class TaskController {
 
 
     @RequestMapping(method = RequestMethod.GET, value = "getTasks")
-    public List<TaskDto> getTask() {
-        return new ArrayList<>();
-    }
+    public List<TaskDto> getTasks() {
+        return taskMapper.mapToTaskDtoList(service.getAllTasks());
+         }
 
     @RequestMapping(method = RequestMethod.GET, value = "getTask")
     public TaskDto getTask(@PathVariable Long taskId) throws TaskNotFoundException {
