@@ -7,18 +7,21 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Getter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Getter
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class TrelloListDto {
-
+public class CreatedTrelloCard {
     @JsonProperty("id")
-    private String id;
+    private  String id;
 
     @JsonProperty("name")
     private String name;
 
-    @JsonProperty("closed")
-    private boolean isClosed;
+    @JsonProperty("shortUrl")
+    private String shortUrl;
+
+    @JsonProperty("badges")
+    private Badges badges;
+
 }
