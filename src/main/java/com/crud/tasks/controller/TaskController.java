@@ -52,4 +52,4 @@ public class TaskController {
     public TaskDto findById(Long id) throws TaskNotFoundException {
         return taskMapper.mapToTaskDto(service.getTask(id).orElseThrow(TaskNotFoundException::new));
     }
-}git
+}
