@@ -26,7 +26,7 @@ public class EmailScheduler {
         simpleEmailService.send(new Mail(
                 adminConfig.getAdminMail(),
                 SUBJECT,
-                "The database is located:" + message(),
+                "Currently in database you've got: " + message(),
                 null
         ));
 
