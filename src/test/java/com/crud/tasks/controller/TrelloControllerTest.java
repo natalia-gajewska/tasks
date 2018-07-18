@@ -40,13 +40,13 @@ public class TrelloControllerTest {
 
     @Test
     public void shouldFetchEmptyTrelloBoards() throws Exception {
-        //Given
+        //given
         List<TrelloBoardDto> trelloBoards = new ArrayList<>();
         when(trelloFacade.fetchTrelloBoards()).thenReturn(trelloBoards);
-        //When & Then
-        mockMvc.perform(get("/v1/trello/getTrelloBoards")
-                .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().is(200))//or isOk()
+
+        //when & then
+        mockMvc.perform(get("/v1/trello/getTrelloBoards").contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().is(200))
                 .andExpect(jsonPath("$", hasSize(0)));
     }
 
