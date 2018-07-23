@@ -51,8 +51,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-mail')
 	compile('com.google.code.gson:gson:2.8.2')
 
-
-
+    // biblioteka wspierajaca tworzenie widokow, szablonow maili i wszystkim co zwiazane z relacja backend -> frontend
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 
 
 }
