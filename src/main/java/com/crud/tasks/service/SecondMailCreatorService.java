@@ -11,7 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class MailCreatorService {
+public class SecondMailCreatorService {
+
     @Autowired
     private AdminConfig adminConfig;
 
@@ -19,26 +20,27 @@ public class MailCreatorService {
     @Qualifier("templateEngine")
     private TemplateEngine templateEngine;
 
-    public String buildTrelloCardEmail(String message) {
-        List<String> functionality = new ArrayList<>();
-        functionality.add("I bet you think you know the story.");
-        functionality.add("You don't.");
-        functionality.add("The real one's much more gory.");
+
+    public String buildSecondTrelloCardEmail(String message) {
+        List<String> bulletPoints = new ArrayList<>();
+        bulletPoints.add("We guarantie salvation.");
+        bulletPoints.add("We can take care of your money.");
+        bulletPoints.add("And everything else.");
 
         Context context = new Context();
         context.setVariable("message", message);
         context.setVariable("tasks_url", "htpp://localhost:8888/crud");
-        context.setVariable("button", "Visit website");
+        context.setVariable("button", "Change your life!");
         context.setVariable("admin_name", adminConfig.getAdminName());
-        context.setVariable("company_details", "Company: Consulting detective, " +
-                "Address: Puerto Rico, " +
-                "phone: 657575755, " +
-                "email: blabla@babla.com");
-        context.setVariable("goodbye_message", "Goodbye!");
+        context.setVariable("company_details", "Company: We are not a Cult! " +
+                "Address: 674 Palo Alto, " +
+                "phone: 896973249, " +
+                "email: notacult@notacult.com");
+        context.setVariable("goodbye_message", "Be blessed!");
         context.setVariable("show_button", false);
         context.setVariable("is_friend", false);
         context.setVariable("admin_config", adminConfig);
-        context.setVariable("application_functionality", functionality);
-        return templateEngine.process("mail/created-trello-card-mail", context);
+        context.setVariable("application_functionality", bulletPoints);
+        return templateEngine.process("mail/not-a-cult-mail", context);
     }
 }

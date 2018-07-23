@@ -18,15 +18,15 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.mockito.Mockito.when;
-
+import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(TrelloController.class)
@@ -40,41 +40,16 @@ public class TrelloControllerTest {
 
     @Test
     public void shouldFetchEmptyTrelloBoards() throws Exception {
-        //given
+        //Given
         List<TrelloBoardDto> trelloBoards = new ArrayList<>();
         when(trelloFacade.fetchTrelloBoards()).thenReturn(trelloBoards);
-
-        //when & then
-        mockMvc.perform(get("/v1/trello/getTrelloBoards").contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().is(200))
+        //When & Then
+        mockMvc.perform(get("/v1/trello/getTrelloBoards")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().is(200))//or isOk()
                 .andExpect(jsonPath("$", hasSize(0)));
     }
 
-    @Test
-    public void shouldFetchTrelloBoards() throws Exception {
-        //Given
-        List<TrelloListDto> trelloLists = new ArrayList<>();
-        trelloLists.add(new TrelloListDto("1", "Test List", false));
-
-        List<TrelloBoardDto> trelloBoards = new ArrayList<>();
-        trelloBoards.add(new TrelloBoardDto("Test Task", "1", trelloLists));
-
-        when(trelloFacade.fetchTrelloBoards()).thenReturn(trelloBoards);
-
-        //When & Then
-        mockMvc.perform(get("/v1/trello/getTrelloBoards").contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                //Trello board fields
-                .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].id", is("1")))
-                .andExpect(jsonPath("$[0].name", is("Test Task")))
-                //Trello list fields
-                .andExpect(jsonPath("$[0].lists", hasSize(1)))
-                .andExpect(jsonPath("$[0].lists[0].id", is("1")))
-                .andExpect(jsonPath("$[0].lists[0].name", is("Test List")))
-                .andExpect(jsonPath("$[0].lists[0].closed", is(false)));
-
-    }
 
     @Test
     public void shouldCreateTrelloCard()throws Exception{
