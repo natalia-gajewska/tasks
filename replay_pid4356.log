@@ -1,0 +1,56 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 168 ciObject found
+ciMethod sun/misc/ProxyGenerator code_aload (ILjava/io/DataOutputStream;)V 3005 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator code_astore (ILjava/io/DataOutputStream;)V 4561 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator codeLocalLoadStore (IIILjava/io/DataOutputStream;)V 3237 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator code_ipush (ILjava/io/DataOutputStream;)V 5913 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator dotToSlash (Ljava/lang/String;)Ljava/lang/String; 3005 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator getMethodDescriptor ([Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/String; 3481 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator getWordsPerType (Ljava/lang/Class;)I 841 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator computeUniqueCatchList ([Ljava/lang/Class;)Ljava/util/List; 3481 97 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$300 (Lsun/misc/ProxyGenerator;)Lsun/misc/ProxyGenerator$ConstantPool; 3013 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$500 ([Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/String; 3481 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$600 (Ljava/lang/Class;)I 841 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$700 (Lsun/misc/ProxyGenerator;ILjava/io/DataOutputStream;)V 11249 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$800 (Lsun/misc/ProxyGenerator;)Ljava/lang/String; 6969 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$900 (Ljava/lang/String;)Ljava/lang/String; 3013 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$1000 (Lsun/misc/ProxyGenerator;ILjava/io/DataOutputStream;)V 5913 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$1100 ([Ljava/lang/Class;)Ljava/util/List; 3481 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator access$1200 (Lsun/misc/ProxyGenerator;ILjava/io/DataOutputStream;)V 3481 1 1 0 -1
+ciInstanceKlass sun/misc/ProxyGenerator 1 1 703 3 3 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 8 100 7 100 7 7 100 100 7 7 7 100 100 7 100 100 7 7 7 7 7 7 7 7 7 100 7 100 7 100 7 7 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 1 1 1 1 1 1 1
+staticfield sun/misc/ProxyGenerator saveGeneratedFiles Z 0
+staticfield sun/misc/ProxyGenerator $assertionsDisabled Z 1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getUtf8 (Ljava/lang/String;)S 5933 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getClass (Ljava/lang/String;)S 3253 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getFieldRef (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)S 10121 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getMethodRef (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)S 3085 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getInterfaceMethodRef (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)S 3361 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getNameAndType (Ljava/lang/String;Ljava/lang/String;)S 3085 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getValue (Ljava/lang/Object;)S 9685 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool getIndirect (Lsun/misc/ProxyGenerator$ConstantPool$IndirectEntry;)S 6901 13 1 0 -1
+ciInstanceKlass sun/misc/ProxyGenerator$ConstantPool 1 1 194 3 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 100 100 100 100 100 100 7 7 100 7 7 7 7 7 100 100 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 1 1 1 1
+ciMethod sun/misc/ProxyGenerator$ProxyMethod generateMethod ()Lsun/misc/ProxyGenerator$MethodInfo; 3469 6341 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ProxyMethod codeWrapArgument (Ljava/lang/Class;ILjava/io/DataOutputStream;)V 833 1 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ProxyMethod codeUnwrapReturnValue (Ljava/lang/Class;Ljava/io/DataOutputStream;)V 3353 1 1 0 -1
+ciInstanceKlass sun/misc/ProxyGenerator$ProxyMethod 1 1 343 3 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 7 7 100 100 7 7 7 7 100 100 100 7 7 7 7 100 7 7 7 7 7 100 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 1 1 1 1 1 1
+ciMethod sun/misc/ProxyGenerator$MethodInfo <init> (Lsun/misc/ProxyGenerator;Ljava/lang/String;Ljava/lang/String;I)V 4537 1 1 0 -1
+ciInstanceKlass sun/misc/ProxyGenerator$MethodInfo 1 1 129 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 7 7 100 7 7 7 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 11 11 11 11 1 1 1 1
+ciMethod sun/misc/ProxyGenerator$ConstantPool$Entry <init> ()V 4213 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool$Entry <init> (Lsun/misc/ProxyGenerator$1;)V 4213 13 1 0 -1
+instanceKlass sun/misc/ProxyGenerator$ConstantPool$IndirectEntry
+instanceKlass sun/misc/ProxyGenerator$ConstantPool$ValueEntry
+ciInstanceKlass sun/misc/ProxyGenerator$ConstantPool$Entry 1 1 29 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 7 100 100 100 7 1 1 12 10 10 1 1
+ciMethod sun/misc/ProxyGenerator$ConstantPool$IndirectEntry <init> (IS)V 1605 13 1 0 -1
+ciMethod sun/misc/ProxyGenerator$ConstantPool$IndirectEntry <init> (ISS)V 1581 13 1 0 -1
+ciInstanceKlass sun/misc/ProxyGenerator$ConstantPool$IndirectEntry 1 1 55 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 100 100 100 100 7 7 1 1 12 12 12 12 12 12 9 9 9 10 10 10 1 1 1
+ciMethod sun/misc/ProxyGenerator$ExceptionTableEntry <init> (SSSS)V 6729 1 1 0 -1
+ciInstanceKlass sun/misc/ProxyGenerator$ExceptionTableEntry 1 1 31 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 100 7 12 12 12 12 12 9 9 9 9 10 1 1
+ciMethod java/lang/Object <init> ()V 3581 13 1 0 -1
+instanceKlass javax/validation/metadata/BeanDescriptor
+instanceKlass javax/validation/metadata/ElementDescriptor
+instanceKlass org/aopalliance/intercept/MethodInvocation
+instanceKlass org/aopalliance/intercept/Invocation
+instanceKlass org/aopalliance/intercept/Joinpoint
+instanceKlass org/springframework/aop/framework/JdkDynamicAopProxy
